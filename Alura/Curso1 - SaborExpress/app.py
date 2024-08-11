@@ -1,3 +1,5 @@
+import os
+
 print("""
 
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -14,9 +16,10 @@ print('3. Ativar restaurante')
 print('4. Sair\n')
 
 opcao_escolhida = int(input('Escolha uma opção: ')) 
-#ja convertendo o input para integer
-# outra forma de converte a entrada do input de string para integer é converter a variável depois
-# opcao_escolhida = int(opcao_escolhida) 
+
+def finalizar_app():
+    os.system('clear')
+    print('Finalizando o app')
 
 
 if opcao_escolhida == 1:
@@ -26,5 +29,5 @@ elif opcao_escolhida == 2:
 elif opcao_escolhida == 3:
     print('Ativar restaurante')
 else:
-    print('Encerrando o programa')
+    finalizar_app()
 
