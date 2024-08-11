@@ -1,6 +1,7 @@
 import os
 
-print("""
+def exibir_nome_do_programa():
+    print("""
 
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
@@ -19,7 +20,7 @@ opcao_escolhida = int(input('Escolha uma opção: '))
 
 def finalizar_app():
     os.system('clear')
-    print('Finalizando o app')
+    print('Finalizando o app\n')
 
 
 if opcao_escolhida == 1:
@@ -31,3 +32,8 @@ elif opcao_escolhida == 3:
 else:
     finalizar_app()
 
+def main():
+    exibir_nome_do_programa()
+
+if __name__ == '__main__':
+    main()
