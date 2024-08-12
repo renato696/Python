@@ -24,7 +24,7 @@ def finalizar_app():
     print('Finalizando o app\n')
     
 def voltar_ao_menu_principal():
-        input('Digite uma tecla para voltar ao menu ')
+        input('\nDigite uma tecla para voltar ao menu ')
         main()
 
 def opcao_invalida():
