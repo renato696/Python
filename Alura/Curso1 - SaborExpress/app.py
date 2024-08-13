@@ -48,6 +48,7 @@ def cadastrar_novo_restaurante():
     
     Outputs:
     - Adiciona um novo restaurante a lista de restaurantes
+    
     '''
     exibir_subtitulo('Cadastro de novos resutaurantes')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar:\n')
