@@ -1,5 +1,6 @@
 """
 Pseudocódigo:
+INICIO
 - mostrar o nome do programa "Calculadora Básica" com fonte diferenciada;
 - Solicitar o primeiro número a ser calculado e armazenar na memória;
 - Solicitar o segundo número a ser calculado e armazenar na memória;
