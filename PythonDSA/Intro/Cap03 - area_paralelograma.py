@@ -9,3 +9,8 @@ Pseudocódigo:
 - Exiba o resultado
 """
 
+print('Bem-vindo à Calculadora de Área do Paralelograma')
+base = float(input('Insira o comprimento da base: '))
+altura = float(input('Insira a altura: '))
+area = base * altura
+print(f'A área do paralelograma é: {area}')
