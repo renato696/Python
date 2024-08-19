@@ -13,9 +13,9 @@ FIM
 
 lista = [6, 7, 8, 3, 10, 19, 4, 1, 0, 61, 30, 16, 17, 82, 29, 34, 43, 21, 11, 39, 56, 67, 12]
 
-def bubble_sort(arr):
+def bubble_sort(arr): #arr é o array que entra como parametro da função
 
-    n = len(arr)
+    n = len(arr) #len(arr) função para pegar o tamanho do array
 
     #para cada elemento i do array
     for i in range(n):
@@ -26,4 +26,6 @@ def bubble_sort(arr):
                 #troque os elementos i e j
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
+
+print(bubble_sort(lista))
     
