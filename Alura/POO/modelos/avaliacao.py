@@ -1,5 +1,5 @@
 class Avaliacao:
-    def __int__(self, clinte, nota):
+    def __init__(self, cliente, nota):
         self._cliente = cliente
         self._nota = nota
         
