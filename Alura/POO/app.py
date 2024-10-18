@@ -17,8 +17,7 @@ restaurante_praca.adicionar_ao_cardapio(prato_omelete)
 #restaurante_hamburger.alternar_estado()
 
 def main():
-    print(bebida_suco)
-    print(prato_omelete)
+   restaurante_praca.exibir_cardapio()
     #Restaurante.listar_restaurantes()
 
 if __name__ == '__main__':

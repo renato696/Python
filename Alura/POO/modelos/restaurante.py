@@ -9,7 +9,7 @@ class Restaurante:
         self._categoria = categoria.upper()
         self._ativo = False
         self._avaliacao = []
-        self._cadapio = []
+        self._cardapio = []
         Restaurante.restaurantes.append(self)
 
     def __str__(self):
@@ -48,6 +48,17 @@ class Restaurante:
     #def adicionar_prato_ao_cardapio(self, prato):
     #    self._cadapio.append(prato)
      
-    def adicionar_ao_cardapio(adicionar, item):
+    def adicionar_ao_cardapio(self, item):
         if isinstance(item, ItemCardapio):
             self._cardapio.append(item)
+    
+    @property        
+    def exibir_cardapio(self):
+        print(f'Cardapio do Restaurante {self._nome}\n')
+        for i,item in enumerate(self._cardapio,start=1):
+            if hasattr(item, 'descricao'):
+                mensagem_prato = f'{i}. Nome: {item._nome} | Preço: R${item._preco} | Descriçao: {item.descricao}'
+                print(mensagem_prato)
+            else: 
+                mensagem_bebida = f'{i}. Nome: {item._nome} | Preço: R${item._preco} | Tamanho: {item.tamanho}'
+                print(mensagem_bebida)
