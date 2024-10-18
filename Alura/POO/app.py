@@ -5,7 +5,8 @@ from modelos.cardapio.prato import Prato
 restaurante_praca = Restaurante('LaPlaza', 'Gourmet')
 bebida_suco = Bebida('Suco de Melancia', 5.00, 'grande')
 prato_omelete = Prato('Omelete', 20.00, 'Ovos mexidos com tomate e oregano')
-
+restaurante_praca.adicionar_ao_cardapio(bebida_suco)
+restaurante_praca.adicionar_ao_cardapio(prato_omelete)
 
 #restaurante_praca.receber_avaliacao('Renato', 1)
 #restaurante_praca.receber_avaliacao('Kosuke', 2)
