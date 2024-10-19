@@ -4,7 +4,7 @@ from modelos.cardapio.prato import Prato
 
 restaurante_praca = Restaurante('LaPlaza', 'Gourmet')
 bebida_suco = Bebida('Suco de Melancia', 5.00, 'grande')
-prato_omelete = Prato('Omelete', 20.00, 'Ovos mexidos com tomate e oregano')
+prato_omelete = Prato('Omelete', 20.00, 'Ovos mexidos com tomate')
 restaurante_praca.adicionar_ao_cardapio(bebida_suco)
 restaurante_praca.adicionar_ao_cardapio(prato_omelete)
 
@@ -17,7 +17,7 @@ restaurante_praca.adicionar_ao_cardapio(prato_omelete)
 #restaurante_hamburger.alternar_estado()
 
 def main():
-   restaurante_praca.exibir_cardapio()
+   restaurante_praca.exibir_cardapio
     #Restaurante.listar_restaurantes()
 
 if __name__ == '__main__':
